@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Panadería Don José - Panadería artesanal desde 1995 en Río Cuarto">
+    <title>Panadería Don José - Panadería Artesanal</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/placeholder.css">
+    
+    <!-- QR Code Library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-bread-slice"></i>
+                    <span>Panadería Don José</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="business-photo">
+                <img src="https://i.pinimg.com/736x/1b/72/57/1b7257aa59d3038ac2cb35bf24a8f450.jpg" alt="Panadería Don José - Interior acogedor" id="businessImage">
+                <div class="photo-overlay"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="business-name">Panadería Don José</h1>
+                <p class="business-tagline">Panadería artesanal desde 1995</p>
+                <div class="hero-badges">
+                    <span class="badge open" id="statusBadge">
+                        <i class="fas fa-clock"></i> Abierto ahora
+                    </span>
+                    <span class="badge rating">
+                        <i class="fas fa-star"></i> 4.8 (250+ reseñas)
+                    </span>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Contactar
+                    </a>
+                    <button class="btn btn-secondary" id="shareBtn">
+                        <i class="fas fa-share-alt"></i> Compartir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <p>Conoce más sobre nuestro negocio</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Bienvenidos a Panadería Don José</h3>
+                    <p class="business-description">
+                        Desde 1995, hemos sido la panadería de confianza de Río Cuarto. 
+                        Elaboramos pan fresco todos los días, medialunas artesanales, facturas caseras 
+                        y tortas para ocasiones especiales. Nuestra tradición familiar garantiza 
+                        la mejor calidad en cada producto que sale de nuestro horno.
+                    </p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Pan Fresco Diario</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Tortas por Encargo</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-cookie-bite"></i>
+                            <span>Facturas Caseras</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Tradición Familiar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://www.plastico.com/uploads/news-pictures/pphoto-7266.jpg" alt="Panadería Don José - Productos artesanales">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Productos</h2>
+                <p>Elaborados diariamente con la mejor calidad</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3>Pan Francés</h3>
+                    <p>Nuestro clásico pan francés, recién horneado cada mañana con masa madre tradicional.</p>
+                    <div class="product-price">Desde $800</div>
+                    <button class="btn btn-outline product-btn" onclick="orderProduct('Pan Francés')">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <h3>Medialunas</h3>
+                    <p>Medialunas de manteca y grasa, dulces y saladas. La especialidad de la casa.</p>
+                    <div class="product-price">Docena: $1500</div>
+                    <button class="btn btn-outline product-btn" onclick="orderProduct('Medialunas')">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Tortas</h3>
+                    <p>Tortas artesanales para toda ocasión. Hacemos por encargo con 24hs de anticipación.</p>
+                    <div class="product-price">Desde $3500</div>
+                    <button class="btn btn-outline product-btn" onclick="orderProduct('Tortas')">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-cupcake"></i>
+                    </div>
+                    <h3>Facturas</h3>
+                    <p>Variedad de facturas: vigilantes, berlinesas, churros, cañoncitos y más.</p>
+                    <div class="product-price">Docena: $2000</div>
+                    <button class="btn btn-outline product-btn" onclick="orderProduct('Facturas')">
+                        <i class="fab fa-whatsapp"></i> Pedir
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-header">
+                    <h3><i class="fas fa-clock"></i> Horarios de Atención</h3>
+                </div>
+                <div class="hours-grid" id="businessHours">
+                    <div class="hour-item">
+                        <span class="day">Lunes - Viernes</span>
+                        <span class="time">8:00 AM - 1:00 PM / 5:00 PM - 8:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Sábado</span>
+                        <span class="time">8:00 AM - 1:00 PM / 5:00 PM - 8:00 PM</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="day">Domingo</span>
+                        <span class="time">Cerrado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="ubicacion" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Ubicación</h2>
+                <p>Fácil de encontrar y llegar</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="address-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                        <p class="business-address">
+                            Lavalle 547<br>
+                            Río Cuarto, Córdoba<br>
+                            CP 5800
+                        </p>
+                        <div class="location-actions">
+                            <a href="#" class="btn btn-outline" id="directionsBtn">
+                                <i class="fas fa-directions"></i> Cómo llegar
+                            </a>
+                            <button class="btn btn-outline" id="copyAddressBtn">
+                                <i class="fas fa-copy"></i> Copiar dirección
+                            </button>
+                        </div>
+                    </div>
+                    <div class="transport-info">
+                        <h4>Transporte público</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i> Líneas 10, 15, 32</li>
+                            <li><i class="fas fa-train"></i> Estación Central (2 cuadras)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="map" class="map"></div>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Mapa interactivo</p>
+                        <small>Haz clic para ver en Google Maps</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Mantente conectado con nosotros</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Teléfono</h4>
+                            <a href="tel:+543564000000" class="contact-link">3564 00-0000</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:info@panaderiaqdonjose.com" class="contact-link">info@panaderiaqdonjose.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/543564000000" class="contact-link">Chatear ahora</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-media">
+                    <h3>Síguenos en redes sociales</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" data-platform="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link instagram" data-platform="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link whatsapp" data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="#" class="social-link google" data-platform="google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Modal -->
+    <div id="qrModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Compartir Tarjeta Digital</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="qr-container">
+                    <canvas id="qrcode"></canvas>
+                </div>
+                <p>Escanea este código QR para compartir nuestra tarjeta digital</p>
+                <div class="share-options">
+                    <button class="btn btn-primary" id="downloadQR">
+                        <i class="fas fa-download"></i> Descargar QR
+                    </button>
+                    <button class="btn btn-secondary" id="copyLink">
+                        <i class="fas fa-link"></i> Copiar enlace
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-bread-slice"></i>
+                        <span>Panadería Don José</span>
+                    </div>
+                    <p>Tu panadería de confianza desde 1995</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Lavalle 547, Río Cuarto</p>
+                    <p><i class="fas fa-phone"></i> 3564 00-0000</p>
+                    <p><i class="fas fa-envelope"></i> info@panaderiaqdonjose.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Panadería Don José. Todos los derechos reservados.</p>
+                <p>Tarjeta Digital creada con ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
